@@ -11,17 +11,20 @@ p{
     margin-top: 30px;
 
 
+
     & Img{
         display: flex;
         justify-content: center;
         padding: 35px;
-        }
+    }
+        
     
     & h1 p{    
         text-align: center;
         font-family: $main-font;
         height: 50vh;
         margin: 20px; 
+    }
 
 
         & Img{
@@ -34,20 +37,13 @@ p{
     
 
 @media screen and (max-width:468px) and (min-width:961px) {
-        font-size: 46px;
-}
-}
 
-@media screen and (max-width: 468) {
-     
+}
+       
+
+
+
     
-}
 
 
 
-
-
-.p{
-    width: 30vh;
-    display: none;
-}

@@ -2,7 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
 * {
   margin: 0;
-  padding: 0;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(236, 220, 230, 0.973);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -44,39 +49,27 @@ footer {
 }
 
 /*--------------------------------------------------------NAV---------------------------------------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-footer {
-  background: #282828;
-}
-
 /*Componentes*/
 /*-----------------------------INICIO------------------------------------------------------*/
-.subtituloInicio {
-  width: 100%;
-  margin: 10px;
+.nombre {
+  margin: 30px;
   padding: 10px;
-  font-family: "Franklin Gothic Medium", sans-serif;
-  font-weight: 300px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  display: inline-block;
 }
-.subtituloInicio h1:hover {
+.nombre .h2:hover {
   background-color: #d788da;
   width: 100%;
   height: 80%;
 }
 
+.nombreMagie {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+
 .galeria__card {
   display: flex;
-  padding: 60px;
-  width: 90%;
+  padding: 70%;
+  width: 80%;
   flex-flow: column nowrap;
 }
 .galeria__card .izquierda {
@@ -90,6 +83,10 @@ footer {
 .galeria__card .derecha {
   display: flex;
   flex-direction: row-reverse;
+}
+.galeria__card p {
+  font-weight: 100;
+  text-align: center;
 }
 
 @media (min-width: 961px) {
@@ -199,40 +196,19 @@ footer {
     max-width: 70%;
   }
 }
-
-
-/*--------------------------------------------TEMPORADA---------------------------------*/
-.contenedor {
-  max-width: 120rem;
-  margin: 0 auto;
+/*---------MARRCAS---------------------------------------------*/
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
 }
 
-@media (min-width: 961px) {
-  .contenedor {
-    max-width: 70%;
-  }
-}
-.contenedor__grid {
-  display: grid;
-  grid-template-columns: 3, 1fr;
-  gap: 3rem;
+#galeria img {
+  width: 100%;
+  height: 250px;
 }
 
-.contenedor__imagenes {
-  background-color: #ccc;
-  padding: 1rem;
-}
-
-.expendida--conjuntos {
-  background-image: url(./multimedia3/fondo.jpg);
-  grid-row: 2/3;
-  grid-column: 1/3;
-}
-
-.expendida--node {
-  background-image: url(./multimedia3/fondo.png);
-  grid-row: 5/6;
-  grid-column: 2/4;
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
 }
 
 p {
@@ -257,32 +233,12 @@ p {
   height: 50vh;
   margin: 20px;
 }
-.contenedor__titulo h1 p Img {
+.contenedor__titulo Img {
   height: 50vh;
   width: 100vh;
 }
-@media screen and (max-width: 468px) and (min-width: 961px) {
-  .contenedor__titulo {
-    font-size: 46px;
-  }
-}
-
-.p {
-  width: 30vh;
-  display: none;
-}
-
-body {
-  background-color: rgba(241, 97, 121, 0.973);
-}
 
 /*--------------------------------------------------------CONTACTANOS----------------------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: rgba(236, 220, 230, 0.973);
 }
@@ -346,9 +302,13 @@ body {
 }
 
 /*------------------BOOTSTRAP INICIO-----------------------------------*/
-.contendorCarrusel {
-  height: 20px;
+.container {
+  padding: 20px;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*------------------BOOTSTRAP FORMULARIO-----------------------------------*/
@@ -357,4 +317,4 @@ body {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylo.css.map */

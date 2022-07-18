@@ -295,30 +295,21 @@ footer{
 
 /*--------------------------------------MARCAS APLICANDO GRID--------------------------------------------------------------*/
 
-.grid-container{
-    display: grid;   
-    grid-template-rows: 50% 50%; 
-    grid-template-columns: 1fr 1fr;      
-    grid-gap: 5px; 
-    padding: 15px;   
+#galeria .col-lg-4{
+    margin: 0!important;
+    padding: 25px;
 }
 
-.grid-item{
-  text-align: center;
-  padding: 5px;
-  
-}
-
-.imagenGrid{
-    width: 400px;
+#galeria img {
+    width: 100%;
     height: 250px;
 }
 
-p{
-    margin-left: 200px;
-    padding-top: 5px;
-
+#galeria img:hover {
+    border: 5px solid #f7f7f7;
 }
+
+
 
 
 /*--------------------------------------------------------CONTACTANOS----------------------------------------------*/
